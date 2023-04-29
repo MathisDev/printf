@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mamottet <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mamottet <mamottet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 22:54:10 by mamottet          #+#    #+#             */
-/*   Updated: 2023/04/27 22:54:13 by mamottet         ###   ########.fr       */
+/*   Updated: 2023/04/29 16:27:11 by mamottet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "../include/ft_printf.h"
 
-static void	ft_printf_checker(char s, va_list *args, int *len, int *i)
+static void	if_printf(char s, va_list *args, int *len, int *i)
 {
 	if (s == 's')
 		ft_string(va_arg(*args, char *), len);
@@ -48,7 +48,7 @@ int	ft_printf(const char *string, ...)
 		if (string[i] == '%')
 		{
 			i++;
-			ft_printf_checker(string[i], &args, &length, &i);
+			if_printf(string[i], &args, &length, &i);
 			i++;
 		}
 		else

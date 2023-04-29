@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_words.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mamottet <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mamottet <mamottet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 22:54:24 by mamottet          #+#    #+#             */
-/*   Updated: 2023/04/27 22:54:27 by mamottet         ###   ########.fr       */
+/*   Updated: 2023/04/29 16:27:15 by mamottet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "../include/ft_printf.h"
 
 //character
 
